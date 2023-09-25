@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1Git
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,18 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btn_aceptar = new Button();
             SuspendLayout();
             // 
-            // Form1
+            // btn_aceptar
+            // 
+            btn_aceptar.Location = new Point(108, 62);
+            btn_aceptar.Name = "btn_aceptar";
+            btn_aceptar.Size = new Size(94, 29);
+            btn_aceptar.TabIndex = 0;
+            btn_aceptar.Text = "Aceptar";
+            btn_aceptar.UseVisualStyleBackColor = true;
+            // 
+            // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1067, 450);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(btn_aceptar);
+            Name = "frmPrincipal";
+            Text = "formularioPrincipal";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btn_aceptar;
     }
 }
