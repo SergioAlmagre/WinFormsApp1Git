@@ -30,6 +30,7 @@
         {
             btn_aceptar = new Button();
             btnsegundo = new Button();
+            btnTercer = new Button();
             SuspendLayout();
             // 
             // btn_aceptar
@@ -51,11 +52,22 @@
             btnsegundo.UseVisualStyleBackColor = true;
             btnsegundo.Click += button1_Click;
             // 
+            // btnTercer
+            // 
+            btnTercer.Location = new Point(531, 62);
+            btnTercer.Name = "btnTercer";
+            btnTercer.Size = new Size(94, 29);
+            btnTercer.TabIndex = 2;
+            btnTercer.Text = "Tercero";
+            btnTercer.UseVisualStyleBackColor = true;
+            btnTercer.Click += button1_Click_1;
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1067, 450);
+            Controls.Add(btnTercer);
             Controls.Add(btnsegundo);
             Controls.Add(btn_aceptar);
             Name = "frmPrincipal";
@@ -67,5 +79,6 @@
 
         private Button btn_aceptar;
         private Button btnsegundo;
+        private Button btnTercer;
     }
 }
