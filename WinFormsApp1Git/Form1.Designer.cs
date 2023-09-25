@@ -47,7 +47,7 @@
             btnsegundo.Name = "btnsegundo";
             btnsegundo.Size = new Size(94, 29);
             btnsegundo.TabIndex = 1;
-            btnsegundo.Text = "Cancelar";
+            btnsegundo.Text = "Muerte";
             btnsegundo.UseVisualStyleBackColor = true;
             btnsegundo.Click += button1_Click;
             // 
