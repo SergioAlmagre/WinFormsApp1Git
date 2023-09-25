@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp1Git
+namespace WinFormsApp1Git
 {
     partial class frmPrincipal
     {
@@ -31,6 +31,7 @@
             btn_aceptar = new Button();
             btnsegundo = new Button();
             label1 = new Label();
+            btnTercer = new Button();
             SuspendLayout();
             // 
             // btn_aceptar
@@ -52,13 +53,22 @@
             btnsegundo.UseVisualStyleBackColor = true;
             btnsegundo.Click += button1_Click;
             // 
+            // btnTercer
+            // 
+            btnTercer.Location = new Point(531, 62);
+            btnTercer.Name = "btnTercer";
+            btnTercer.Size = new Size(94, 29);
+            btnTercer.Text = "Tercero";
+            btnTercer.UseVisualStyleBackColor = true;
+            btnTercer.Click += button1_Click_1;
+            // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(658, 75);
             label1.Name = "label1";
             label1.Size = new Size(91, 20);
-            label1.TabIndex = 2;
+            label1.TabIndex = 3;
             label1.Text = "Hola que tal";
             // 
             // frmPrincipal
@@ -66,6 +76,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1067, 450);
+            Controls.Add(btnTercer);
             Controls.Add(label1);
             Controls.Add(btnsegundo);
             Controls.Add(btn_aceptar);
@@ -79,6 +90,5 @@
 
         private Button btn_aceptar;
         private Button btnsegundo;
-        private Label label1;
     }
 }
