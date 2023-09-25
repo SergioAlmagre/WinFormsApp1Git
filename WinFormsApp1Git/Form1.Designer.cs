@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btn_aceptar = new Button();
+            btnsegundo = new Button();
             SuspendLayout();
             // 
             // btn_aceptar
@@ -40,11 +41,22 @@
             btn_aceptar.Text = "Aceptar";
             btn_aceptar.UseVisualStyleBackColor = true;
             // 
+            // btnsegundo
+            // 
+            btnsegundo.Location = new Point(315, 62);
+            btnsegundo.Name = "btnsegundo";
+            btnsegundo.Size = new Size(94, 29);
+            btnsegundo.TabIndex = 1;
+            btnsegundo.Text = "Muerte";
+            btnsegundo.UseVisualStyleBackColor = true;
+            btnsegundo.Click += button1_Click;
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1067, 450);
+            Controls.Add(btnsegundo);
             Controls.Add(btn_aceptar);
             Name = "frmPrincipal";
             Text = "formularioPrincipal";
@@ -54,5 +66,6 @@
         #endregion
 
         private Button btn_aceptar;
+        private Button btnsegundo;
     }
 }
